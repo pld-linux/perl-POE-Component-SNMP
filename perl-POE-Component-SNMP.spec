@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _with_tests - perform "make test"
+%bcond_with	tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	POE
@@ -17,7 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	3af45861535db9f229adfe0654c32c07
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{?_with_tests:1}0
+%if %{with tests}
 BuildRequires:	perl-Net-SNMP
 BuildRequires:	perl-POE
 %endif
@@ -38,7 +38,7 @@ Ten modu³ to sterowany zdarzeniami interfejs do SNMP dla POE.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT

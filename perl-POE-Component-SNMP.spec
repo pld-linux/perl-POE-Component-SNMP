@@ -11,7 +11,7 @@ Name:		perl-POE-Component-SNMP
 Version:	0.01
 Release:	1
 # same as perl
-License:	GPL/Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	3af45861535db9f229adfe0654c32c07

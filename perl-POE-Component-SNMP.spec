@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	POE
-%define	pnam	Component-SNMP
+%define		pdir	POE
+%define		pnam	Component-SNMP
 Summary:	POE::Component::SNMP - event-driven SNMP interface
 Summary(pl):	POE::Component::SNMP - sterowany zdarzeniami interfejs do SNMP
 Name:		perl-POE-Component-SNMP

@@ -6,7 +6,7 @@
 %define	pdir	POE
 %define	pnam	Component-SNMP
 Summary:	POE::Component::SNMP - event-driven SNMP interface
-#Summary(pl):	
+Summary(pl):	POE::Component::SNMP - sterowany zdarzeniami interfejs do SNMP
 Name:		perl-POE-Component-SNMP
 Version:	0.01
 Release:	1
@@ -27,8 +27,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This module is an event-driven SNMP interface for POE.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ to sterowany zdarzeniami interfejs do SNMP dla POE.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

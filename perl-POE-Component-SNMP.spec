@@ -8,13 +8,13 @@
 Summary:	POE::Component::SNMP - event-driven SNMP interface
 Summary(pl):	POE::Component::SNMP - sterowany zdarzeniami interfejs do SNMP
 Name:		perl-POE-Component-SNMP
-Version:	0.91
-Release:	2
+Version:	0.92
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	02516cd750d770b5081d6466c84b4f1e
+# Source0-md5:	cde7492a80d52a756cbb6fbe9d97cf88
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
